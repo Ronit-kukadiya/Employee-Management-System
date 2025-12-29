@@ -1,8 +1,12 @@
-a simple EMS website where the admin can add tasks to the employees, and employees can manage their task stack.
+# React + Vite
 
-[LOGIN]
-<img width="1919" height="876" alt="image" src="https://github.com/user-attachments/assets/eacd9cde-26b6-4999-895d-dcf6f67e18cd" />
-[ADMIN]
-<img width="1919" height="879" alt="image" src="https://github.com/user-attachments/assets/4ea638e0-aa02-492a-b78d-2792d8fdcc94" />
-[EMPLOYEE]
-<img width="1919" height="878" alt="image" src="https://github.com/user-attachments/assets/acca54d5-c41f-47a8-888b-65643caa716d" />
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

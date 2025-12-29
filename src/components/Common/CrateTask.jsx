@@ -6,7 +6,7 @@ const CrateTask = () => {
 
   const [title, settitle] = useState("");
   const [date, setdate] = useState("");
-  const [AssignTo, setAssignTo] = useState("");
+  const [AssignTo, setAssignTo] = useState("Select Employee");
   const [category, setcategory] = useState("");
   const [description, setdescription] = useState("");
   //
@@ -76,15 +76,22 @@ const CrateTask = () => {
           </div>
           <div>
             <h3 className="text-white text-sm mb-0.5">Assign to</h3>
-            <input
+            <select
               onChange={(e) => {
                 setAssignTo(e.target.value);
               }}
+              className="text-sm px-5 py-1 mb-4 w-4/5 rounded-2xl outline-none bg-white"
               value={AssignTo}
-              className="text-sm px-5 py-1 mb-4 w-4/5 rounded-2xl outline-none bg-white placeholder:text-gray-400"
-              type="text"
-              placeholder="employee name"
-            />
+              name=""
+              id=""
+            >
+              <option value="Select Employee">Select Employee</option>
+              {userdata.map((elem, index) => (
+                <option key={index} value={elem.name}>
+                  {elem.name}
+                </option>
+              ))}
+            </select>
           </div>
           <div>
             <h3 className="text-white text-sm mb-0.5">Category</h3>
