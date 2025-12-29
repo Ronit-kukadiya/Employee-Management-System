@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+#taskcards::-webkit-scrollbar {
+  display: none;
+}
