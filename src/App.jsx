@@ -34,9 +34,11 @@ const App = () => {
           "loggedinUser",
           JSON.stringify({ role: "employee", data: employee })
         );
+      } else {
+        console.log("out here");
+
+        alert("invalid");
       }
-    } else {
-      alert("invalid");
     }
   };
 
@@ -54,30 +56,3 @@ const App = () => {
 };
 
 export default App;
-
-// if (Authdata && Authdata.employees) {
-//     const employee = Authdata.employees.find(
-//       (e) => e.email === email && e.password === password
-//     );
-
-//     if (employee) {
-//       setUser("employee");
-//       setloggedinUserData(employee);
-//       localStorage.setItem(
-//         "loggedinUser",
-//         JSON.stringify({ role: "employee" })
-//       );
-//       return;
-//     }
-//   }
-
-//   // If nothing matched
-//   alert("Invalid email or password");
-// };
-
-// {!user && <Login handleLogin={handleLogin} />}
-
-// {user === "admin" && <AdminDashboard />}
-// {user === "employee" && (
-//   <EmployeeDashboard data={loggedinUserData} />
-// )}
